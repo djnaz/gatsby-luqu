@@ -19,8 +19,6 @@ export default function MainNav() {
     }
   `);
 
-  console.log(data.allWpMenuItem.nodes);
-
   // This functions converts the flat menu list into a hierarchical list
   const flatListToHierarchical = (
     data = [],
@@ -42,21 +40,19 @@ export default function MainNav() {
 
   const mainMenuList = flatListToHierarchical(data.allWpMenuItem.nodes);
 
-  console.log(mainMenuList);
-
   return (
     <nav className="main-menu">
       <ul className="menu">
         {mainMenuList.map((menuItem) => (
-          <li>
-            <Link to={menuItem.path} key={menuItem.id}>
+          <li key={menuItem.id}>
+            <Link to={menuItem.path}>
               {menuItem.label}
             </Link>
             {menuItem.children.length > 0 ? (
               <ul className="sub-menu">
                 {menuItem.children.map((childItem) => (
-                  <li>
-                    <Link to={childItem.path} key={childItem.id}>
+                  <li key={childItem.id}>
+                    <Link to={childItem.path}>
                       {childItem.label}
                     </Link>
                   </li>
