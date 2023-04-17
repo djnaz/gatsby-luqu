@@ -1,0 +1,53 @@
+$cache-buster: '?20210705';
+$debug: false;
+
+$max-width: 1600px;
+
+//////////////////////////////////////////////////
+
+$size-mobile: 512;
+$size-mini: 768;
+$size-tablet: 1024;
+$size-desktop: 1536;
+$size-max: 2048;
+
+$break-phone: '(max-width: #{$size-mobile - 1}px)';
+$break-mini: '(max-width: #{$size-mini - 1}px)';
+$break-mobile: '(max-width: #{$size-tablet - 1}px)';
+$break-tablet: '(max-width: #{$size-desktop - 1}px)';
+$break-desktop: '(max-width: #{$size-max - 1}px)';
+$break-max: '(min-width: #{$size-max}px)';
+
+//////////////////////////////////////////////////
+
+// Font Family 'Montserrat'
+
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+//////////////////////////////////////////////////
+
+$color-text-body: #2F3E48; // rgba(47,62,72,1)
+$color-text-header: #21485A; // rgba(33, 72, 90,1)
+$color-text-light: #E9EFF5; // rgba(233,239,245,1)
+
+$color-yellow: #EAFC73; // rgba(234,252,115,1)
+//$color-green: #97F882; // rgba(151,248,130,1)
+$color-green: #75f96bff; // rgba(117,249,107,1)
+$color-pink: #E77FF6; // rgba(231,127,246,1)
+$color-blue: #3A59F3; // rgba(58,89,243,1)
+$color-orange: #E66F3B; // rgba(230,111,59,1)
+$color-red: #962323; // rgba(234,252,115,1)
+$color-gray-dark: #707070; // rgba(112,112,112,1)
+$color-gray-light: #C2CFD3; // rgba(194,207,211,1)
+$color-blgray-light: #e5ebed; //
+$color-blgreen-dark: #2F3E48; // rgba(47,62,72,1)
+$color-blgreen-medium: #1D5F73; // rgba(29,95,115,1)
+$color-blgreen-light: #4C6B72; // rgba(76,107,114,1)
+
+//////////////////////////////////////////////////

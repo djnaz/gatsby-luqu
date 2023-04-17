@@ -19,7 +19,7 @@ query allPosts {
 
 data.allWpPost.nodes.forEach(node => {
     actions.createPage({
-        path: '/post/' + node.slug,
+        path: node.slug,
         component: path.resolve('./src/templates/post-template.js'),
         context: { slug: node.slug, content: node.content, title: node.title }
     })

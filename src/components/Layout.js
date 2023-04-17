@@ -1,5 +1,6 @@
 import React from 'react'
 import MainNav from './MainNav'
+import '../styles/global.scss'
 
 export default function Layout({ children }) {
   return (

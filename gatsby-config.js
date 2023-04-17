@@ -18,6 +18,7 @@ module.exports = {
          */
         url: `https://gatsby.luquire.com/graphql`,
       },
-    }
+    },
+    `gatsby-plugin-sass`,
   ],
 }
